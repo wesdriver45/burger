@@ -1,4 +1,16 @@
 
+<div class="container">
+  
+  <div style="height:80px; width:200px; background-color:peru; border-top-right-radius:80px; border-top-left-radius:80px;"></div>
+  <div style="height:10px; width:200px; background-color:green"></div>
+  <div style="height:10px; width:200px; background-color:red"></div>
+  <div style="height:10px; width:200px; background-color:yellow"></div>
+  <div style="height:15px; width:200px; background-color:brown"></div>
+  <div style="height:10px; width:200px; background-color:green"></div>
+  <div style="height:30px; width:200px; background-color:peru; border-bottom-right-radius:20px; border-bottom-left-radius:20px;"></div>
+
+</div>
+
 
 <h1>Burgers!</h1>
 
@@ -7,7 +19,7 @@
 <ul>
   {{#each burger}}
     {{#unless devoured}}
-      {{> burger/burger-block devoured=false}}
+      {{> burger/burger_name devoured=false}}
     {{/unless}}
   {{/each}}
 </ul>
@@ -22,5 +34,8 @@
   </div>
 
 
-  <button type="submit">Add Burger</button>
+  <button type="submit">Add a Burger!</button>
+
+  <button type="submit">Devour It!</button>
+
 </form>
