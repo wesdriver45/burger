@@ -16,13 +16,13 @@
 
 <h2>Burger Not Devoured!</h2>
 
-<ul>
-  {{#each burger}}
-    {{#unless devoured}}
-      {{> burger/burger_name devoured=false}}
-    {{/unless}}
-  {{/each}}
-</ul>
+  <ul>
+    {{#each burger}}
+      {{#unless devoured}}
+        {{> burger devoured=false}}
+      {{/unless}}
+    {{/each}}
+  </ul>
 
 
 <h2>Add a Burger</h2>
@@ -39,3 +39,12 @@
   <button type="submit">Devour It!</button>
 
 </form>
+
+<div class="container">
+  <ul>
+    {{#each burger}}
+      {{#unless devoured = true}}
+      {{/devoured}}
+    {{/each}}
+  </ul>
+</div>
